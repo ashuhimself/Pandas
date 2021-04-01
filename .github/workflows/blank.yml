@@ -1,0 +1,11 @@
+import pandas as pd
+df = pd.read_csv('data/survey_results_public.csv') #to load a file in jupyter notebook
+df  #to print loaded data
+df.head(10) #to check desired number of rows in data if we want to see from the top
+df.tail(10) #to check desired number of rows in data if we want to see from the bottom
+df.shape #to check number of rows and column
+df.info() #to check data type of table
+pd.set_option('display.max_column',85) #to set to see all the column in the data
+pd.set_option('display.max_rows',85)  #to set to see all the rows in the data
+schema_df = pd.read_csv('data/survey_results_schema.csv') #give column/schema in our data
+schema_df #to read the data of schema
